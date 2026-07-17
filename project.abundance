@@ -140,6 +140,160 @@
         }
       ],
       "unionType": "Fusion"
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.6802083333333333,
+      "y": 0.8652482269503545,
+      "uniqueID": "id-107",
+      "name": "loadFont",
+      "ioValues": [
+        {
+          "name": "text",
+          "ioValue": "\"umymm\""
+        },
+        {
+          "name": "TTF",
+          "ioValue": "\"http://fonts.gstatic.com/s/inder/v5/C38TwecLTfKxIHDc_Adcrw.ttf\""
+        },
+        {
+          "name": "text size",
+          "ioValue": 3
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-101",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-102",
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-103",
+          "name": "TTF",
+          "type": "string"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-104",
+          "name": "text size",
+          "type": "number"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.3590361445783133,
+          "y": 0.2293577981651376,
+          "uniqueID": "id-105",
+          "ioValues": [
+            {
+              "name": "TTF",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "text",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "size",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "interpreterVersion": 0,
+          "code": "//Inputs:[TTF, text, size]; \n\n await replicad.loadFont(\"https://fonts.gstatic.com/s/roboto/v15/W5F8_SL0XFawnjxHGsZjJA.ttf\")\n  \n      console.log(\"font loaded in code\")\n\n   \n      let shape1 = replicad.drawText(\"mom\")\n\n      let shape2 = replicad.drawText(\"mommy\", {fontSize: size, font: \"ROBOTO\"})\n\n      const newPlane = new Plane().pivot(0, 'Y');\n      console.log(shape2)\n\n     return { geometry: [shape2.sketchOnPlane(newPlane).extrude(7)], tags: [],\n        color: '#A3CE5B',\n        plane: newPlane}\n\n"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.5096385542168674,
+          "y": 0.5076452599388379,
+          "uniqueID": "id-106",
+          "ioValues": [
+            {
+              "name": "TTF",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "text",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "size",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "interpreterVersion": 0,
+          "code": "//Inputs:[TTF, text, size]; \n\n await replicad.loadFont(TTF)\n  \n      console.log(\"font loaded in code\")\n      let textString = text.toString()\n\n      let shape2 = replicad.drawText(textString, {fontSize: size, font: \"ROBOTO\"})\n\n      const newPlane = new Plane().pivot(0, 'Y');\n      console.log(shape2)\n\n     return { geometry: [shape2.sketchOnPlane(newPlane).extrude(3)], tags: [],\n        color: '#A3CE5B',\n        plane: newPlane}\n\n"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "text",
+          "ap1ID": "id-102",
+          "ap2ID": "id-106"
+        },
+        {
+          "ap2Name": "TTF",
+          "ap1ID": "id-103",
+          "ap2ID": "id-106"
+        },
+        {
+          "ap2Name": "size",
+          "ap1ID": "id-104",
+          "ap2ID": "id-106"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-106",
+          "ap2ID": "id-101"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-07-17T02:23:38.888Z",
+        "privateRepo": false,
+        "repoName": "loadFont",
+        "dateCreated": "2025-03-05T17:46:52Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/alzatin/loadFont/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": 1741196812752,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/alzatin/loadFont",
+        "topics": [
+          "abundance-tool"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739315",
+        "ranking": 0.3,
+        "searchField": "loadfont alzatin use a ttf string to load a new font and drawtext abundance-tool",
+        "owner": "alzatin",
+        "description": "use a ttf string to load a new font and drawText",
+        "contentURL": "https://raw.githubusercontent.com/alzatin/loadFont/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/alzatin/loadFont/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Inches",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1784269319851
     }
   ],
   "allConnectors": [
