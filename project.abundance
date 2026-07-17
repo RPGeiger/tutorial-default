@@ -247,6 +247,18 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Import",
+      "x": 0.7349333333333333,
+      "y": 0.45862884160756506,
+      "uniqueID": "id-162",
+      "fileName": "Belt Roller.step",
+      "name": "Import",
+      "type": "STEP",
+      "repoOwner": "RPGeiger",
+      "repoName": "tutorial-default",
+      "SVGwidth": 10
     }
   ],
   "allConnectors": [
