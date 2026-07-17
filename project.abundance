@@ -79,73 +79,10 @@
       ]
     },
     {
-      "atomType": "Fusion",
-      "x": 0.6395833333333333,
-      "y": 0.3806146572104019,
-      "uniqueID": "id-39",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": {
-            "geometry": "extrude-rectangle-10-10-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
-            "dimension": "3D",
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "tags": [],
-            "bom": []
-          }
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": {
-            "geometry": "extrude-circle-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-17",
-            "dimension": "3D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
-        }
-      ],
-      "unionType": "Fusion"
-    },
-    {
       "atomType": "GitHubMolecule",
-      "x": 0.6802083333333333,
-      "y": 0.8652482269503545,
-      "uniqueID": "id-107",
+      "x": 0.6796875,
+      "y": 0.8534278959810875,
+      "uniqueID": "id-137",
       "name": "loadFont",
       "ioValues": [
         {
@@ -167,7 +104,7 @@
           "atomType": "Output",
           "x": 0.98,
           "y": 0.5,
-          "uniqueID": "id-101",
+          "uniqueID": "id-131",
           "ioValues": [
             {
               "name": "number or geometry",
@@ -179,7 +116,7 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.15384615384615385,
-          "uniqueID": "id-102",
+          "uniqueID": "id-132",
           "name": "text",
           "type": "string"
         },
@@ -187,7 +124,7 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.24615384615384617,
-          "uniqueID": "id-103",
+          "uniqueID": "id-133",
           "name": "TTF",
           "type": "string"
         },
@@ -195,7 +132,7 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.3384615384615385,
-          "uniqueID": "id-104",
+          "uniqueID": "id-134",
           "name": "text size",
           "type": "number"
         },
@@ -203,7 +140,7 @@
           "atomType": "Code",
           "x": 0.3590361445783133,
           "y": 0.2293577981651376,
-          "uniqueID": "id-105",
+          "uniqueID": "id-135",
           "ioValues": [
             {
               "name": "TTF",
@@ -225,7 +162,7 @@
           "atomType": "Code",
           "x": 0.5096385542168674,
           "y": 0.5076452599388379,
-          "uniqueID": "id-106",
+          "uniqueID": "id-136",
           "ioValues": [
             {
               "name": "TTF",
@@ -247,23 +184,23 @@
       "allConnectors": [
         {
           "ap2Name": "text",
-          "ap1ID": "id-102",
-          "ap2ID": "id-106"
+          "ap1ID": "id-132",
+          "ap2ID": "id-136"
         },
         {
           "ap2Name": "TTF",
-          "ap1ID": "id-103",
-          "ap2ID": "id-106"
+          "ap1ID": "id-133",
+          "ap2ID": "id-136"
         },
         {
           "ap2Name": "size",
-          "ap1ID": "id-104",
-          "ap2ID": "id-106"
+          "ap1ID": "id-134",
+          "ap2ID": "id-136"
         },
         {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-106",
-          "ap2ID": "id-101"
+          "ap1ID": "id-136",
+          "ap2ID": "id-131"
         }
       ],
       "parentRepo": {
@@ -293,7 +230,23 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1784269319851
+      "lastReloadedFromGithubAt": 1784269528029
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.6619791666666667,
+      "y": 0.28368794326241137,
+      "uniqueID": "id-156",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -303,9 +256,9 @@
       "ap2ID": "id-8"
     },
     {
-      "ap2Name": "Shape 1",
+      "ap2Name": "retain",
       "ap1ID": "id-8",
-      "ap2ID": "id-39"
+      "ap2ID": "id-156"
     },
     {
       "ap2Name": "geometry",
@@ -313,9 +266,9 @@
       "ap2ID": "id-15"
     },
     {
-      "ap2Name": "Shape 2",
+      "ap2Name": "remove",
       "ap1ID": "id-15",
-      "ap2ID": "id-39"
+      "ap2ID": "id-156"
     }
   ],
   "unitsKey": "MM",
