@@ -93,6 +93,41 @@
           "ioValue": null
         }
       ]
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7651041666666666,
+      "y": 0.6193853427895981,
+      "uniqueID": "id-7944",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 2
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "tutorial-default",
+          "currentEquation": "tutorial-default"
+        }
+      ],
+      "partName": "tutorial-default",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -115,6 +150,16 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-15",
       "ap2ID": "id-759"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-759",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-759",
+      "ap2ID": "id-7944"
     }
   ],
   "unitsKey": "MM",
